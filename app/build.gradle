@@ -48,6 +48,9 @@ dependencies {
     implementation "com.google.dagger:dagger:2.11"
     implementation "com.squareup.retrofit2:converter-gson:2.3.0"
     implementation "com.squareup.okhttp3:logging-interceptor:3.8.1"
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     //TODO: Legacy -> WIP -> Migrate to Koin or Hilt?
     kapt "com.google.dagger:dagger-compiler:2.11"
