@@ -2,6 +2,7 @@ package com.namanh.lovedays.core.di
 
 import android.content.Context
 import com.namanh.lovedays.AndroidApplication
+import com.namanh.lovedays.features.MemoriesRepository
 import com.squareup.leakcanary.BuildConfig
 import dagger.Module
 import dagger.Provides
@@ -36,4 +37,5 @@ class ApplicationModule(private val application: AndroidApplication) {
         return okHttpClientBuilder.build()
     }
 
+    @Provides @Singleton fun provideMemoriesRepository(dataSource: MemoriesRepository.Network): MemoriesRepository = dataSource
 }

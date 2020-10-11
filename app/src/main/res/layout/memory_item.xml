@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/text_title"
+        android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Title"
@@ -13,19 +13,19 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_description"
+        android:id="@+id/textDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Description"
-        app:layout_constraintStart_toStartOf="@id/text_title"
-        app:layout_constraintTop_toBottomOf="@id/text_title" />
+        app:layout_constraintStart_toStartOf="@id/textTitle"
+        app:layout_constraintTop_toBottomOf="@id/textTitle" />
 
     <TextView
-        android:id="@+id/text_date"
+        android:id="@+id/textDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="1-1-2020"
-        app:layout_constraintStart_toStartOf="@id/text_title"
-        app:layout_constraintTop_toBottomOf="@id/text_description" />
+        app:layout_constraintStart_toStartOf="@id/textTitle"
+        app:layout_constraintTop_toBottomOf="@id/textDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -59,5 +59,5 @@ class Navigator
 //        return intent
 //    }
 //
-//    class Extras(val transitionSharedElement: View)
+    class Extras(val transitionSharedElement: View)
 }
