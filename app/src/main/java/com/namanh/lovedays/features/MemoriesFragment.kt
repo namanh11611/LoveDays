@@ -2,6 +2,7 @@ package com.namanh.lovedays.features
 
 import android.os.Bundle
 import android.view.View
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.namanh.lovedays.R
 import com.namanh.lovedays.core.base.BaseFragment
@@ -21,7 +22,7 @@ class MemoriesFragment : BaseFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        appComponent.inject(this)
+//        appComponent.inject(this)
 
 //        memoriesViewModel = viewModel(viewModelFactory) {
 //
@@ -35,7 +36,8 @@ class MemoriesFragment : BaseFragment() {
     }
 
     private fun initializeView() {
-        memoriesList.layoutManager = StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL)
+        memoriesAdapter = MemoriesAdapter()
+        memoriesList.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         memoriesList.adapter = memoriesAdapter
     }
 
