@@ -42,14 +42,13 @@ class MemoriesFragment : BaseFragment() {
     }
 
     private fun loadMoviesList() {
-        memoriesList.visibility = View.VISIBLE
         memoriesAdapter.collection = listOf(
             MemoryView(0, "Love song", "Song from a secret garden", 1, 1, 2020),
-            MemoryView(1, "Love mail", "Song from a secret garden", 1, 1, 2020),
-            MemoryView(2, "Love dance", "Sexy dance", 1, 1, 2020),
-            MemoryView(3, "Love message", "Song from a secret garden", 1, 1, 2020),
-            MemoryView(4, "Love book", "A book about love", 1, 1, 2020),
-            MemoryView(5, "Love film", "A film about love", 1, 1, 2020)
+            MemoryView(1, "Love mail", "Song from a garden", 1, 3, 2020),
+            MemoryView(2, "Love dance", "Sexy dance", 1, 5, 2021),
+            MemoryView(3, "Love message", "Song about secret garden", 6, 7, 2022),
+            MemoryView(4, "Love book", "A book about love", 1, 9, 2024),
+            MemoryView(5, "Love film", "A film about love", 1, 10, 2025)
         )
     }
 }

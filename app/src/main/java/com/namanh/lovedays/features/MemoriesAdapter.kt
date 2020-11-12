@@ -29,6 +29,9 @@ class MemoriesAdapter
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(memoryView: MemoryView, clickListener: (MemoryView, Navigator.Extras) -> Unit) {
+            itemView.textTitle.text = memoryView.title
+            itemView.textDescription.text = memoryView.description
+            itemView.textDate.text = "${memoryView.day}-${memoryView.month}-${memoryView.year}"
             itemView.setOnClickListener {
                 clickListener(
                     memoryView,
