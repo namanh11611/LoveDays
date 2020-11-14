@@ -5,12 +5,14 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="@dimen/memory_padding"
     android:layout_marginVertical="@dimen/memory_padding_vertical"
+    android:background="?attr/colorBackground"
     app:cardCornerRadius="@dimen/memory_radius"
     app:cardElevation="@dimen/memory_elevation">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="?attr/colorBackground"
         android:clickable="true"
         android:focusable="true"
         android:padding="@dimen/memory_padding">
@@ -28,6 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/memory_padding"
             android:fontFamily="@font/roboto_bold"
+            android:textColor="?attr/colorTextPrimary"
             android:textSize="@dimen/memory_text_title_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/image_memory"
@@ -41,6 +44,7 @@
             android:ellipsize="end"
             android:fontFamily="@font/roboto"
             android:maxLines="2"
+            android:textColor="?attr/colorTextPrimary"
             android:textSize="@dimen/memory_text_description_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@id/textTitle"
@@ -52,6 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/memory_text_time_margin"
             android:fontFamily="@font/roboto_italic"
+            android:textColor="?attr/colorTextSecondary"
             android:textSize="@dimen/memory_text_time_size"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@id/textTitle"

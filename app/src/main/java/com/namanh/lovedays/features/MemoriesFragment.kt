@@ -22,17 +22,17 @@ class MemoriesFragment : BaseFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        appComponent.inject(this)
+        appComponent.inject(this)
 
-//        memoriesViewModel = viewModel(viewModelFactory) {
-//
-//        }
+        memoriesViewModel = viewModel(viewModelFactory) {
+
+        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initializeView()
-        loadMoviesList()
+        loadMemoriesList()
     }
 
     private fun initializeView() {
@@ -41,7 +41,7 @@ class MemoriesFragment : BaseFragment() {
         memoriesList.adapter = memoriesAdapter
     }
 
-    private fun loadMoviesList() {
+    private fun loadMemoriesList() {
         memoriesAdapter.collection = listOf(
             MemoryView(0, "Love song", "Song from a secret garden", 1, 1, 2020),
             MemoryView(1, "Love mail", "Song from a garden", 1, 3, 2020),

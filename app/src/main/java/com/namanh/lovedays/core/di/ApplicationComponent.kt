@@ -13,5 +13,5 @@ interface ApplicationComponent {
     fun inject(application: AndroidApplication)
     fun inject(routeActivity: RouteActivity)
 
-//    fun inject(memoriesFragment: MemoriesFragment)
+    fun inject(memoriesFragment: MemoriesFragment)
 }
